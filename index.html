@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano Simulator</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h2>Piano</h2>
+      <div class="octave-container">
+          <span class="octave">Oitavas: - - </span>
+          <div class="octave-button-container">  
+              <button class="octave-button up">^</button>
+              <button class="octave-button down">v</button>
+            </div>
+      </div>
+    </div>
+    <ul class="piano-keys">
+      <li class="key white" data-key="KeyQ"><span>q</span></li>
+      <li class="key black" data-key="KeyW"><span>w</span></li>
+      <li class="key white" data-key="KeyE"><span>e</span></li>
+      <li class="key black" data-key="KeyR"><span>r</span></li>
+      <li class="key white" data-key="KeyT"><span>t</span></li>
+      <li class="key white" data-key="KeyY"><span>y</span></li>
+      <li class="key black" data-key="KeyU"><span>u</span></li>
+      <li class="key white" data-key="KeyI"><span>i</span></li>
+      <li class="key black" data-key="KeyO"><span>o</span></li>
+      <li class="key white" data-key="KeyP"><span>p</span></li>
+      <li class="key black" data-key="BracketLeft"><span>´</span></li>
+      <li class="key white" data-key="BracketRight"><span>[</span></li>
+    </ul>
+
+    <ul class="piano-keys">
+        <li class="key white" data-key="KeyA"><span>a</span></li>
+        <li class="key black" data-key="KeyS"><span>s</span></li>
+        <li class="key white" data-key="KeyD"><span>d</span></li>
+        <li class="key black" data-key="KeyF"><span>f</span></li>
+        <li class="key white" data-key="KeyG"><span>g</span></li>
+        <li class="key white" data-key="KeyH"><span>h</span></li>
+        <li class="key black" data-key="KeyJ"><span>j</span></li>
+        <li class="key white" data-key="KeyK"><span>k</span></li>
+        <li class="key black" data-key="KeyL"><span>l</span></li>
+        <li class="key white" data-key="Semicolon"><span>ç</span></li>
+        <li class="key black" data-key="Quote"><span>~</span></li>
+        <li class="key white" data-key="Backslash"><span>]</span></li>
+      </ul>
+
+      <ul class="piano-keys">
+        <li class="key white" data-key="IntlBackslash"><span>\</span></li>
+        <li class="key black" data-key="KeyZ"><span>z</span></li>
+        <li class="key white" data-key="KeyX"><span>x</span></li>
+        <li class="key black" data-key="KeyC"><span>c</span></li>
+        <li class="key white" data-key="KeyV"><span>v</span></li>
+        <li class="key white" data-key="KeyB"><span>b</span></li>
+        <li class="key black" data-key="KeyN"><span>n</span></li>
+        <li class="key white" data-key="KeyM"><span>m</span></li>
+        <li class="key black" data-key="Comma"><span>,</span></li>
+        <li class="key white" data-key="Period"><span>.</span></li>
+        <li class="key black" data-key="Slash"><span>;</span></li>
+        <li class="key white" data-key="IntlRo"><span>/</span></li>
+      </ul>
+
+  </div>
+  <script src="./src/scripts/index.js" defer></script>
+</body>
+
+</html>
