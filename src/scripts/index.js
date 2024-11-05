@@ -161,9 +161,11 @@ let lastOctave = 4;
 let pressedKeys = [];
 let currentContexts = {};
 const context = new AudioContext();
-const real = new Float32Array([0, 1, 0.5, 0.25, 0.1, 0.05]);
-const imag = new Float32Array(real.length);
-const wave = context.createPeriodicWave(real, imag);
+
+// Isso aqui ainda não ficou bom, esta com um xiado estranho ao final do audio
+// const real = new Float32Array([0, 1, 0.5, 0.25, 0.1, 0.05]);
+// const imag = new Float32Array(real.length);
+// const wave = context.createPeriodicWave(real, imag);
 
 const displayOctave = () => {
   const octave = document.querySelector(".octave");
@@ -219,7 +221,8 @@ const playTone = (tone) => {
   currentContexts[tone] = contextGain;
   oscillator.connect(contextGain);
   contextGain.connect(context.destination);
-  oscillator.setPeriodicWave(wave);
+  //   oscillator.setPeriodicWave(wave);
+  oscillator.type = "square";
   oscillator.frequency.value = keysNodeMap[tone];
   oscillator.start(0);
 };
