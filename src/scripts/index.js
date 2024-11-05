@@ -232,7 +232,7 @@ const stopTone = (tone) => {
   pressedKeys = pressedKeys.filter((pressed) => pressed !== tone);
   currentContexts[tone].gain.exponentialRampToValueAtTime(
     0.00001,
-    context.currentTime + 1
+    context.currentTime + 3
   );
   const clickedKey = document.querySelector(`[data-key="${tone}"]`);
   clickedKey.classList.remove("active");
